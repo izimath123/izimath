@@ -1,0 +1,17 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.note {
+  margin-top: 20px;
+  font-style: italic;
+  color: #777;
+}
