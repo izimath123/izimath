@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>IziMath | Ejercicio de Fracciones</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f5f7fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .exercise-box {
+      background: white;
+      padding: 35px;
+      width: 420px;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .trial-label {
+      font-size: 14px;
+      color: #ff5722;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 10px 0 20px;
+      color: #333;
+    }
+
+    .meta {
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    /* FRACTIONS */
+    .problem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 18px;
+      margin: 25px 0;
+      font-size: 22px;
+    }
+
+    .fraction {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 40px;
+    }
+
+    .fraction .top {
+      border-bottom: 2px solid #000;
+      padding: 0 6px;
+      line-height: 1.2;
+    }
+
+    .fraction .bottom {
+      padding: 0 6px;
+      line-height: 1.2;
+    }
+
+    .operator {
+      font-size: 26px;
+      margin: 0 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 18px;
+      font-size: 16px;
+      background-color: #ff5722;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #e64a19;
+    }
+
+    .feedback {
+      margin-top: 15px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .correct {
+      color: green;
+    }
+
+    .incorrect {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="exercise-box">
+
+    <p class="trial-label">Prueba gratuita · Nivel Secundaria</p>
+
+    <h1>IziMath</h1>
+
+    <div class="meta"><strong>Tema:</strong> Suma de fracciones</div>
+
+    <div class="problem">
+      <div class="fraction">
+        <div class="top">3</div>
+        <div class="bottom">4</div>
+      </div>
+
+      <div class="operator">+</div>
+
+      <div class="fraction">
+        <div class="top">1</div>
+        <div class="bottom">2</div>
+      </div>
+    </div>
+
+    <input
+      type="text"
+      id="answer"
+      placeholder="Escribe tu respuesta (ej: 5/4 o 1.25)"
+    >
+
+    <button onclick="checkAnswer()">Responder</button>
+
+    <div id="feedback" class="feedback"></div>
+
+  </div>
+
+  <script>
+    function checkAnswer() {
+      const input = document.getElementById("answer").value.trim();
+      const feedback = document.getElementById("feedback");
+
+      // Respuesta correcta: 3/4 + 1/2 = 5/4 = 1.25
+      const correctFraction = "5/4";
+      const correctDecimal = 1.25;
+
+      let isCorrect = false;
+
+      if (input.includes("/")) {
+        isCorrect = input === correctFraction;
+      } else {
+        const numeric = parseFloat(input);
+        isCorrect = Math.abs(numeric - correctDecimal) < 0.001;
+      }
+
+      if (isCorrect) {
+        feedback.textContent = "✅ ¡Correcto! Buen trabajo.";
+        feedback.className = "feedback correct";
+      } else {
+        feedback.textContent =
+          "❌ Aún no es correcto. Intenta convertir las fracciones a un mismo denominador.";
+        feedback.className = "feedback incorrect";
+      }
+    }
+  </script>
+
+</body>
+</html>
