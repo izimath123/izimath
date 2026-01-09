@@ -2,68 +2,119 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>IZIMATH | Plataforma Educativa</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IziMath | Tutoría y Preparación en Matemática</title>
+
+  <!-- CSS GLOBAL -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="nav-left">
-      <img src="assets/logo.png" alt="IziMath Logo" class="logo">
-    </div>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-content">
+      <img src="assets/logo.png" alt="IziMath" class="logo">
 
-    <nav class="nav-menu">
-      <a href="#">Tutoría de Mate</a>
-      <a href="#">Precio</a>
-      <a href="#">Sección CEPREPUC</a>
-      <a href="#">¿Por qué IziMath?</a>
-    </nav>
+      <nav class="nav">
+        <a href="#">Inicio</a>
+        <a href="#servicios">Tutoría de matemáticas</a>
+        <a href="#ceprespuc">Preparación CEPREPUC</a>
+        <a href="#pucp">EEGGCC PUCP</a>
+        <a href="#porque">¿Por qué IziMath?</a>
+      </nav>
+
+      <a href="#contacto" class="btn-primary">Comenzar</a>
+    </div>
   </header>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-content">
-      <h1>Aprender matemáticas<br>con sentido, paso a paso</h1>
+    <div class="container hero-content">
+      <h1>Aprende matemáticas con sentido,<br>no de memoria</h1>
       <p>
-        Plataforma educativa adaptativa para estudiantes de primaria y secundaria.
-        Pensada para entender, no memorizar.
+        Tutoría personalizada, preparación CEPREPUC y cursos de matemáticas de EEGGCC PUCP.
+        Paso a paso y adaptado a tu nivel real.
       </p>
-      <a href="ejercicio.html" class="cta-link">
-  <button class="cta">Comenzar</button>
-</a>
-  </section>
-
-  <!-- FEATURES -->
-  <section class="features">
-    <div class="feature">
-      <h3>🧠 Aprendizaje guiado</h3>
-      <p>
-        Detectamos errores conceptuales y procedimentales,
-        no solo respuestas correctas o incorrectas.
-      </p>
-    </div>
-
-    <div class="feature">
-      <h3>📊 Adaptativo</h3>
-      <p>
-        El nivel y tipo de ejercicios se ajustan según el
-        desempeño real del estudiante.
-      </p>
-    </div>
-
-    <div class="feature">
-      <h3>🎓 Enfoque peruano</h3>
-      <p>
-        Alineado al currículo nacional y a la preparación
-        académica (CEPREPUC).
-      </p>
+      <a href="#contacto" class="btn-primary btn-large">Comenzar tutoría</a>
     </div>
   </section>
+
+  <!-- PARA QUIÉN -->
+  <section class="audience">
+    <div class="container grid-3">
+      <div class="card">
+        <h3>🎓 Secundaria</h3>
+        <p>Refuerzo escolar con acompañamiento personalizado y enfoque conceptual.</p>
+      </div>
+      <div class="card">
+        <h3>🏫 CEPREPUC</h3>
+        <p>Preparación enfocada en el tipo de problemas del examen PUCP.</p>
+      </div>
+      <div class="card">
+        <h3>📘 EEGGCC PUCP</h3>
+        <p>Apoyo en cursos de EEGGCC.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="features">
+    <div class="container grid-4">
+      <div class="card">
+        <h4>🧠 Tutoría personalizada</h4>
+        <p>Clases 1 a 1 adaptadas a tu nivel y ritmo.</p>
+      </div>
+      <div class="card">
+        <h4>📈 Aprendizaje adaptativo</h4>
+        <p>Ejercicios que evolucionan según tu desempeño.</p>
+      </div>
+      <div class="card">
+        <h4>🎯 Enfoque en resultados</h4>
+        <p>Objetivos claros: exámenes, ingreso y cursos universitarios.</p>
+      </div>
+      <div class="card">
+        <h4>🇵🇪 Contexto peruano</h4>
+        <p>Currículo nacional y exigencia PUCP.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section class="steps">
+    <div class="container grid-3">
+      <div class="step">
+        <h3>1️⃣ Diagnóstico</h3>
+        <p>Identificamos tu nivel y dificultades reales.</p>
+      </div>
+      <div class="step">
+        <h3>2️⃣ Plan personalizado</h3>
+        <p>Definimos qué aprender y cómo avanzar.</p>
+      </div>
+      <div class="step">
+        <h3>3️⃣ Práctica y seguimiento</h3>
+        <p>Ejercicios, feedback y progreso visible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-section">
+  <h2>¿Listo para mejorar en matemáticas?</h2>
+  <p>
+    Empieza con tutoría personalizada, preparación CEPREPUC
+    y cursos de matemáticas universitarias.
+  </p>
+
+  <a href="https://wa.me/51983524973" class="cta-button">
+    Contactar por WhatsApp
+  </a>
+</section>
+
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2026 IziMath — Plataforma educativa en construcción</p>
+    <p>© 2026 IziMath — Plataforma educativa en desarrollo</p>
   </footer>
 
 </body>
