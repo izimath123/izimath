@@ -2,120 +2,167 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IziMath | Tutoría y Preparación en Matemática</title>
-
-  <!-- CSS GLOBAL -->
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IziMath | Aprende matemáticas con sentido</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container header-content">
-      <img src="assets/logo.png" alt="IziMath" class="logo">
-
-      <nav class="nav">
-        <a href="#">Inicio</a>
-        <a href="#servicios">Tutoría de matemáticas</a>
-        <a href="#ceprespuc">Preparación CEPREPUC</a>
-        <a href="#pucp">EEGGCC PUCP</a>
-        <a href="#porque">¿Por qué IziMath?</a>
-      </nav>
-
-      <a href="#contacto" class="btn-primary">Comenzar</a>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/logo.png" alt="IziMath Logo">
     </div>
+
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#programas">Programas</a>
+      <a href="#tutoria">Tutorías</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#porque">¿Por qué IziMath?</a>
+    </nav>
+    <a href="#contacto" class="btn-primary">Comenzar</a>
   </header>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="container hero-content">
-      <h1>Aprende matemáticas con sentido,<br>no de memoria</h1>
+    <div class="hero-text">
+      <h1><span>Entiende, aplica, domina</span><br>las matemáticas</h1>
       <p>
-        Tutoría personalizada, preparación CEPREPUC y cursos de matemáticas de EEGGCC PUCP.
+        Tutoría personalizada y preparación universitaria.
         Paso a paso y adaptado a tu nivel real.
       </p>
-      <a href="#contacto" class="btn-primary btn-large">Comenzar tutoría</a>
+      <a href="#contacto" class="btn-cta">Comenzar tutoría</a>
     </div>
-  </section>
 
-  <!-- PARA QUIÉN -->
-  <section class="audience">
-    <div class="container grid-3">
-      <div class="card">
-        <h3>🎓 Secundaria</h3>
-        <p>Refuerzo escolar con acompañamiento personalizado y enfoque conceptual.</p>
+    <div class="hero-cards">
+      <div class="card gradient-blue card-1">
+        <img src="assets/secundaria.png" class="card-img" alt="Secundaria">
+        <h3>Secundaria</h3>
+        <p class="card-description">Refuerza conceptos fundamentales</p>
       </div>
-      <div class="card">
-        <h3>🏫 CEPREPUC</h3>
-        <p>Preparación enfocada en el tipo de problemas del examen PUCP.</p>
-      </div>
-      <div class="card">
-        <h3>📘 EEGGCC PUCP</h3>
-        <p>Apoyo en cursos de EEGGCC.</p>
-      </div>
-    </div>
-  </section>
 
-  <!-- SERVICIOS -->
-  <section id="servicios" class="features">
-    <div class="container grid-4">
-      <div class="card">
-        <h4>🧠 Tutoría personalizada</h4>
-        <p>Clases 1 a 1 adaptadas a tu nivel y ritmo.</p>
+      <div class="card gradient-turquoise card-2">
+        <img src="assets/ceprepuc.png" class="card-img" alt="CEPREPUC">
+        <h3>CEPREPUC</h3>
+        <p class="card-description">Prepárate para tu ingreso</p>
       </div>
-      <div class="card">
-        <h4>📈 Aprendizaje adaptativo</h4>
-        <p>Ejercicios que evolucionan según tu desempeño.</p>
-      </div>
-      <div class="card">
-        <h4>🎯 Enfoque en resultados</h4>
-        <p>Objetivos claros: exámenes, ingreso y cursos universitarios.</p>
-      </div>
-      <div class="card">
-        <h4>🇵🇪 Contexto peruano</h4>
-        <p>Currículo nacional y exigencia PUCP.</p>
+
+      <div class="card gradient-blue-dark card-3">
+        <img src="assets/eeggcc.png" class="card-img" alt="EEGGCC PUCP">
+        <h3>EEGGCC PUCP</h3>
+        <p class="card-description">Domina matemáticas universitarias</p>
       </div>
     </div>
   </section>
 
-  <!-- CÓMO FUNCIONA -->
-  <section class="steps">
-    <div class="container grid-3">
-      <div class="step">
-        <h3>1️⃣ Diagnóstico</h3>
-        <p>Identificamos tu nivel y dificultades reales.</p>
+  <!-- SECCIÓN DE PROGRAMAS -->
+  <section id="programas" class="programs-section">
+    <h2 class="section-title">Nuestros Programas</h2>
+    <p class="section-subtitle">Elige el programa que se adapte a tus necesidades</p>
+    
+    <div class="programs-grid">
+      <div class="program-card">
+        <div class="program-icon">📚</div>
+        <h3>Secundaria</h3>
+        <p>Fortalece tu base matemática con tutorías personalizadas que se adaptan a tu ritmo de aprendizaje.</p>
+        <ul class="program-features">
+          <li>✓ Álgebra y aritmética</li>
+          <li>✓ Geometría y trigonometría</li>
+          <li>✓ Resolución de problemas</li>
+        </ul>
       </div>
-      <div class="step">
-        <h3>2️⃣ Plan personalizado</h3>
-        <p>Definimos qué aprender y cómo avanzar.</p>
+
+      <div class="program-card featured">
+        <div class="badge">Más popular</div>
+        <div class="program-icon">🎓</div>
+        <h3>CEPREPUC</h3>
+        <p>Preparación intensiva para el examen de admisión con enfoque en las áreas más importantes.</p>
+        <ul class="program-features">
+          <li>✓ Simulacros de examen</li>
+          <li>✓ Análisis de temas frecuentes</li>
+          <li>✓ Estrategias de resolución</li>
+        </ul>
       </div>
-      <div class="step">
-        <h3>3️⃣ Práctica y seguimiento</h3>
-        <p>Ejercicios, feedback y progreso visible.</p>
+
+      <div class="program-card">
+        <div class="program-icon">🚀</div>
+        <h3>EEGGCC PUCP</h3>
+        <p>Domina Cálculo I, II y todos los cursos de matemáticas de Estudios Generales.</p>
+        <ul class="program-features">
+          <li>✓ Cálculo diferencial e integral</li>
+          <li>✓ Álgebra lineal</li>
+          <li>✓ Preparación para exámenes</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- CTA FINAL -->
-  <section class="cta-section">
-  <h2>¿Listo para mejorar en matemáticas?</h2>
-  <p>
-    Empieza con tutoría personalizada, preparación CEPREPUC
-    y cursos de matemáticas universitarias.
-  </p>
+  <!-- LLAMADA A LA ACCIÓN - WHATSAPP -->
+  <section id="contacto" class="cta-section">
+    <div class="cta-container">
+      <div class="cta-content">
+        <h2>¿Listo para mejorar en matemáticas?</h2>
+        <p>Agenda tu primera sesión gratuita y descubre cómo podemos ayudarte a alcanzar tus metas</p>
+        
+        <div class="cta-benefits">
+          <div class="benefit">
+            <span class="benefit-icon">✓</span>
+            <span>Primera clase de prueba sin costo</span>
+          </div>
+          <div class="benefit">
+            <span class="benefit-icon">✓</span>
+            <span>Evaluación personalizada de tu nivel</span>
+          </div>
+          <div class="benefit">
+            <span class="benefit-icon">✓</span>
+            <span>Plan de estudio adaptado a ti</span>
+          </div>
+        </div>
 
-  <a href="https://wa.me/51983524973" class="cta-button">
-    Contactar por WhatsApp
-  </a>
-</section>
+        <a href="https://wa.me/51999999999?text=Hola%2C%20me%20interesa%20saber%20m%C3%A1s%20sobre%20las%20tutor%C3%ADas%20de%20IziMath" 
+           class="btn-whatsapp" 
+           target="_blank">
+          <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+          </svg>
+          Contactar por WhatsApp
+        </a>
 
+        <p class="cta-note">También puedes escribirnos al: <strong>+51 999 999 999</strong></p>
+      </div>
+
+      <div class="cta-image">
+        <div class="floating-card">
+          <div class="message-bubble">
+            <p>¡Hola! 👋 ¿En qué puedo ayudarte hoy?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2026 IziMath — Plataforma educativa en desarrollo</p>
-  </footer>
-
-</body>
-</html>
+    <div class="footer-content">
+      <div class="footer-section">
+        <img src="assets/logo.png" alt="IziMath Logo" class="footer-logo">
+        <p>Aprendizaje de matemáticas con sentido, no de memoria.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Enlaces rápidos</h4>
+        <a href="#programas">Programas</a>
+        <a href="#tutoria">Tutorías</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <p>WhatsApp: +51 999 999 999</p>
+        <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5d34333b321d342734303c2935733e3230">[email&#160;protected]</a></p>
+      </div>
+    </div>
+    
+    <div class="fo
