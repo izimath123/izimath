@@ -133,8 +133,9 @@ html {
 .hero-cards {
   display: flex;
   gap: 35px;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
+  min-height: 500px;
 }
 
 /* =====================
@@ -209,11 +210,20 @@ html {
 }
 
 /* =====================
-   ESCALONADO
+   ESCALONADO - Usando align-self para posicionamiento preciso
 ===================== */
-.card-1 { margin-bottom: 45px; }
-.card-2 { margin-bottom: 22px; }
-.card-3 { margin-bottom: 0; }
+.card-1 { 
+  align-self: flex-start;
+  margin-top: 0;
+}
+
+.card-2 { 
+  align-self: center;
+}
+
+.card-3 { 
+  align-self: flex-end;
+}
 
 /* =====================
    SECCIÓN DE PROGRAMAS
@@ -562,7 +572,6 @@ html {
 
   .card {
     width: 220px;
-    margin-bottom: 20px !important;
   }
 
   .card-img {
